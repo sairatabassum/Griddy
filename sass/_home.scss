@@ -3,10 +3,13 @@
   margin: 15rem 0;
   align-content: center;
   @media only screen and (max-width: $bp-tab-port) {
-    grid-column: 2/11;
+    grid-column: 1/-1;
+    padding: 8rem;
+    margin: 7rem 0;
   }
   @media only screen and (max-width: $bp-fin) {
-    margin: 10rem 0;
+    margin: 8rem 0;
+    padding: 0;
   }
 
   display: grid;
@@ -19,22 +22,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 3.5rem;
-
   @media only screen and (max-width: $bp-fin) {
-    width: 23rem;
+    margin: 0 6rem;
   }
-  @media only screen and (max-width: 374px) {
-    width: 21rem;
-    // margin-left: -3rem;
-  }
-
-  @media only screen and (max-width: 374px) {
-    margin-left: -1rem;
-  }
-  @media only screen and (max-width: 334px) {
-    margin-left: -1.5rem;
-  }
-
   &__img {
     width: 100%;
     grid-column: 1/-1;

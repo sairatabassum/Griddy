@@ -1,7 +1,12 @@
 .features {
   grid-column: center-start/center-end;
   @media only screen and (max-width: $bp-tab-port) {
-    grid-column: 2/11;
+    grid-column: 1/-1;
+    padding: 4rem;
+    margin: 10rem 0;
+  }
+  @media only screen and (max-width: $bp-fin) {
+    margin: 5rem 0;
   }
   margin: 15rem 0;
 
@@ -12,10 +17,7 @@
   align-items: start;
 
   @media only screen and (max-width: $bp-mini) {
-    grid-gap: 3rem;
-  }
-  @media only screen and (max-width: $bp-fin) {
-    margin-left: -3rem;
+    grid-gap: 5rem;
   }
 }
 .feature {
@@ -27,6 +29,11 @@
   @media only screen and (max-width: $bp-mini) {
     row-gap: 1rem;
     column-gap: 2rem;
+  }
+  @media only screen and (max-width: $bp-o) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
   }
   &__icon {
     fill: $color-primary;
@@ -47,6 +54,9 @@
     font-size: 1.7rem;
     @media only screen and (max-width: $bp-mini) {
       font-size: 1.5rem;
+    }
+    @media only screen and (max-width: $bp-o) {
+      text-align: center;
     }
     @media only screen and (max-width: $bp-fini) {
       font-size: 1.2rem;
