@@ -18,8 +18,9 @@ $font-display: "Josefin Sans", sans-serif;
 $bp-tab-land: 63.06em; //1009
 $bp-nine: 60.62em; //970
 $bp-tab-port: 54.31em; //854
+$bp-kini: 52.25em; //836
 $bp-mini: 47.81em; //765
-$bp-sin: 40.31em; //645
+$bp-sin: 42.87em; //686
 $bp-fini: 30em; //480
 $bp-fin: 25em; //400
 
@@ -53,6 +54,9 @@ body {
   }
 
   @media only screen and (max-width: $bp-sin) {
-    grid-template-rows: 8rem 90vh 25rem min-content 40vw repeat(3, min-content);
+    grid-template-rows: 8rem 90vh 25rem min-content 40vw 60vw repeat(
+        3,
+        min-content
+      );
   }
 }
