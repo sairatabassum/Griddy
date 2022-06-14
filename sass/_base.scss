@@ -16,8 +16,10 @@ $font-display: "Josefin Sans", sans-serif;
 
 // Media Queries
 $bp-tab-land: 63.06em; //1009
-$bp-tab-port: 51.5em; //824
-$bp-mini: 34.13em; //546
+$bp-nine: 60.62em; //970
+$bp-tab-port: 54.31em; //854
+$bp-mini: 47.81em; //765
+$bp-sin: 40.31em; //645
 
 *,
 *::before,
@@ -46,5 +48,9 @@ body {
     [center-end] minmax(6rem, 1fr) [full-end];
   @media only screen and (max-width: $bp-tab-port) {
     grid-template-rows: 8rem 80vh min-content 40vw repeat(3, min-content);
+  }
+
+  @media only screen and (max-width: $bp-sin) {
+    grid-template-rows: 8rem 90vh 25rem min-content 40vw repeat(3, min-content);
   }
 }

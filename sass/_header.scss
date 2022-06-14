@@ -5,6 +5,11 @@
   @media only screen and (max-width: $bp-tab-port) {
     grid-column: sidebar-start/col-end 5;
   }
+  @media only screen and (max-width: $bp-sin) {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    border-bottom: 1px solid #ccc;
+  }
 
   background-image: linear-gradient(
       rgba($color-secondary, 0.93),
@@ -15,6 +20,10 @@
   background-position: center;
   padding: 8rem;
   padding-top: 4rem;
+
+  @media only screen and (max-width: $bp-tab-port) {
+    padding: 5rem;
+  }
 
   display: grid;
   grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;

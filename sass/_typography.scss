@@ -8,6 +8,13 @@
   font-size: 4.5rem;
   color: $color-grey-light-1;
   line-height: 1;
+
+  @media only screen and (max-width: $bp-nine) {
+    font-size: 4rem;
+  }
+  @media only screen and (max-width: $bp-mini) {
+    font-size: 3rem;
+  }
 }
 .heading-2 {
   @extend %heading;
@@ -27,6 +34,10 @@
   font-size: 1.6rem;
   color: $color-primary;
   text-transform: uppercase;
+
+  @media only screen and (max-width: $bp-nine) {
+    font-size: 1.2rem;
+  }
 }
 .heading-4 {
   @extend %heading;
@@ -54,6 +65,9 @@
 
   &:hover {
     background-color: $color-primary-dark;
+  }
+  @media only screen and (max-width: $bp-nine) {
+    padding: 1.5rem 2rem;
   }
 }
 
