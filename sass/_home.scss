@@ -5,6 +5,9 @@
   @media only screen and (max-width: $bp-tab-port) {
     grid-column: 2/11;
   }
+  @media only screen and (max-width: $bp-fin) {
+    margin: 10rem 0;
+  }
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -16,6 +19,21 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 3.5rem;
+
+  @media only screen and (max-width: $bp-fin) {
+    width: 23rem;
+  }
+  @media only screen and (max-width: 374px) {
+    width: 21rem;
+    // margin-left: -3rem;
+  }
+
+  @media only screen and (max-width: 374px) {
+    margin-left: -1rem;
+  }
+  @media only screen and (max-width: 334px) {
+    margin-left: -1.5rem;
+  }
 
   &__img {
     width: 100%;
@@ -39,6 +57,11 @@
     color: #fff;
     font-weight: 400;
     transform: translateY(50%);
+
+    @media only screen and (max-width: $bp-fin) {
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
   }
   &__location,
   &__rooms {
@@ -53,11 +76,18 @@
     margin-left: 2rem;
     display: flex;
     align-items: center;
+    @media only screen and (max-width: $bp-mini) {
+      font-size: 1.2rem;
+    }
     svg {
       fill: $color-primary;
       height: 2rem;
       width: 2rem;
       margin-right: 1rem;
+      @media only screen and (max-width: $bp-fin) {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
     }
   }
   &__btn {
