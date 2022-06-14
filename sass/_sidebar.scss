@@ -4,6 +4,14 @@
   grid-row: 1/-1;
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: $bp-tab-port) {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    justify-content: end;
+
+    padding-right: 2rem;
+  }
 }
 
 .nav-btn {

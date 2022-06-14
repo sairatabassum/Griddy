@@ -7,6 +7,10 @@
   justify-content: center;
   row-gap: 3rem;
 
+  @media only screen and (max-width: $bp-tab-port) {
+    grid-column: col-start 6 / full-end;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: min-content max-content;
