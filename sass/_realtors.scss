@@ -35,6 +35,7 @@
       justify-items: center;
       align-items: center;
     }
+
     &-rel-1 {
       @media only screen and (max-width: $bp-sin) {
         grid-row: 2/3;
@@ -53,11 +54,22 @@
     width: 7rem;
     border-radius: 50%;
     display: block;
+
+    @media only screen and (max-width: $bp-fini) {
+      width: 5rem;
+    }
   }
   &__sold {
     text-transform: uppercase;
     color: $color-grey-light-2;
     margin-top: -3px;
+
+    @media only screen and (max-width: $bp-fini) {
+      font-size: 1rem;
+    }
+    @media only screen and (max-width: $bp-fin) {
+      font-size: 0.8rem;
+    }
   }
   h3 {
     justify-self: center;

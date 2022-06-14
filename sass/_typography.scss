@@ -15,6 +15,9 @@
   @media only screen and (max-width: $bp-mini) {
     font-size: 3rem;
   }
+  @media only screen and (max-width: $bp-fini) {
+    font-size: 2rem;
+  }
 }
 .heading-2 {
   @extend %heading;
@@ -42,6 +45,12 @@
 .heading-4 {
   @extend %heading;
   font-size: 1.9rem;
+  @media only screen and (max-width: $bp-fini) {
+    font-size: 1.5rem;
+  }
+  @media only screen and (max-width: $bp-fin) {
+    font-size: 1rem;
+  }
 
   &--light {
     color: $color-grey-light-1;

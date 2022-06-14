@@ -40,6 +40,9 @@ body {
   @media only screen and (max-width: 47.81em) {
     .heading-1 {
       font-size: 3rem; } }
+  @media only screen and (max-width: 30em) {
+    .heading-1 {
+      font-size: 2rem; } }
 
 .heading-2 {
   font-size: 4rem;
@@ -60,6 +63,12 @@ body {
 
 .heading-4 {
   font-size: 1.9rem; }
+  @media only screen and (max-width: 30em) {
+    .heading-4 {
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 25em) {
+    .heading-4 {
+      font-size: 1rem; } }
   .heading-4--light {
     color: #f9f7f6; }
   .heading-4--dark {
@@ -222,10 +231,19 @@ body {
     width: 7rem;
     border-radius: 50%;
     display: block; }
+    @media only screen and (max-width: 30em) {
+      .realtors__img {
+        width: 5rem; } }
   .realtors__sold {
     text-transform: uppercase;
     color: #aaa;
     margin-top: -3px; }
+    @media only screen and (max-width: 30em) {
+      .realtors__sold {
+        font-size: 1rem; } }
+    @media only screen and (max-width: 25em) {
+      .realtors__sold {
+        font-size: 0.8rem; } }
   .realtors h3 {
     justify-self: center; }
 
