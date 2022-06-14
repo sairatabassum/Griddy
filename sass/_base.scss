@@ -50,11 +50,14 @@ body {
     [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
     [center-end] minmax(6rem, 1fr) [full-end];
   @media only screen and (max-width: $bp-tab-port) {
-    grid-template-rows: 8rem 80vh min-content 40vw repeat(3, min-content);
+    grid-template-rows: 6rem calc(100vh - 6rem) min-content 40vw repeat(
+        3,
+        min-content
+      );
   }
 
   @media only screen and (max-width: $bp-sin) {
-    grid-template-rows: 8rem 90vh 25rem min-content 40vw 60vw repeat(
+    grid-template-rows: 6rem calc(100vh - 6rem) 25rem min-content min-content min-content repeat(
         3,
         min-content
       );
